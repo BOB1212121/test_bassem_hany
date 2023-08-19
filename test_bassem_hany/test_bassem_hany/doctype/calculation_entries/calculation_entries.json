@@ -1,0 +1,165 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{customer}-{serial}",
+ "creation": "2023-08-19 14:11:41.180828",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "serial",
+  "customer",
+  "records",
+  "section_break_4",
+  "avg_kw",
+  "avg_kwh",
+  "monthly_average_tariff_section",
+  "monthly_average_tariff",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "serial",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Serial",
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Calculation Entries",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "records",
+   "fieldtype": "Table",
+   "label": "Records",
+   "options": "Entries",
+   "reqd": 1
+  },
+  {
+   "fieldname": "avg_kw",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "AVG KW",
+   "precision": "7"
+  },
+  {
+   "fieldname": "avg_kwh",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "AVG KWH",
+   "precision": "7"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "monthly_average_tariff_section",
+   "fieldtype": "Section Break",
+   "label": "Monthly Average Tariff"
+  },
+  {
+   "fieldname": "monthly_average_tariff",
+   "fieldtype": "Table",
+   "label": "Monthly Average Tariff",
+   "options": "Monthly Average Tariff"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-08-19 17:52:30.016779",
+ "modified_by": "Administrator",
+ "module": "Test Bassem Hany",
+ "name": "Calculation Entries",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Master Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "select": 1,
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "select": 1,
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1
+}
